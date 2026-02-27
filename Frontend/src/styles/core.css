@@ -10,6 +10,13 @@
   --text-muted: #94a3b8;
   --error: #ef4444;
   --success: #22c55e;
+
+  /* KodFlix (Netflix-like) palette */
+  --kf-bg: #141414;
+  --kf-surface: #181818;
+  --kf-text: #ffffff;
+  --kf-muted: rgba(255, 255, 255, 0.72);
+  --kf-red: #e50914;
 }
 
 * {
@@ -18,14 +25,15 @@
   box-sizing: border-box;
 }
 
+html, body, #root {
+  height: 100%;
+}
+
 body {
   font-family: 'Inter', sans-serif;
-  background: var(--bg-gradient);
-  color: var(--text-main);
+  background: var(--kf-bg);
+  color: var(--kf-text);
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow-x: hidden;
 }
 
